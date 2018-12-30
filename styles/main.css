@@ -1,0 +1,125 @@
+.content-wrapper{
+  background-color: #cacaca;
+  top:60px;
+  width:100%;
+  display:flex;
+  flex-flow: row wrap;
+}
+.flex-content h1 {
+  color:#F70716;
+  flex-flow: row wrap;
+  text-align: center;
+  width:100%;
+}
+.flex-content p {
+  width:50%;
+  padding: 0 3%;
+  box-sizing: border-box;
+}
+body{
+  background-color: #cacaca
+}
+.flex-image{
+  max-width:200px;
+  max-height:200px;
+  display: flex;
+}
+.flex-content{
+  width:35%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+}
+#topnav{
+  height:60px;
+  width: 100%;
+  background-color: rgb(232,232,232);
+  top:0;
+  display:inline-block;
+}
+body, ul{
+  padding:0;
+  margin:0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+#logo, #logo li{
+  list-style-type: none;
+  box-sizing: content-box;
+  width:30%;
+  display:inline-block;
+}
+#logo li a img {
+  height:60px;
+}
+#logo{
+  padding-left: 12em;
+}
+#navitems, #navitems li{
+  list-style-type: none;
+  display:inline-block;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: content-box;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 25px;
+  padding: 0 1em;
+}
+#songdrop{
+  list-style-type: none;
+  display:inline-block;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: content-box;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 25px;
+  padding: 0 1em;
+  color:#F70716
+}
+#songdrop:hover .dropdown {
+    display: block;
+}
+#navitems{
+  float:right;
+  padding-top: 0.35em;
+}
+#navitems li a {
+  color: #F70716;
+  text-decoration: none;
+}
+.dropdown {
+  display:none;
+  position: absolute;
+  background-color: rgb(244,244,244);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+#thefile {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  z-index: 100;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+}
+
+audio {
+  position: fixed;
+  width: calc(80%);
+  right:10px;
+}
