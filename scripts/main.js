@@ -15,7 +15,7 @@ window.onload = function() {
 
     var canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth/2;
-    canvas.height = window.innerHeight/2;
+    canvas.height = window.innerHeight/3;
     var ctx = canvas.getContext("2d");
 
     src.connect(analyser);
@@ -47,9 +47,9 @@ window.onload = function() {
       for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
 
-        var b = barHeight + (25 * (i/bufferLength));
-        var r = 250 * (i/bufferLength);
-        var g = 100;
+        //var b = barHeight + (25 * (i/bufferLength));
+        //var r = 250 * (i/bufferLength);
+        //var g = 100;
 
         ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);

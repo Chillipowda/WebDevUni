@@ -114,11 +114,11 @@ body, ul{
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 
 audio {
   position: fixed;
-  width: calc(70%);
+  width: calc(50%);
   right:10px;
 }
