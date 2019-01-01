@@ -104,7 +104,6 @@ body, ul{
     text-align: left;
 }
 #thefile {
-  position: fixed;
   top: 70px;
   left: 10px;
   z-index: 100;
@@ -120,6 +119,6 @@ body, ul{
 
 audio {
   position: fixed;
-  width: calc(80%);
+  width: calc(70%);
   right:10px;
 }
