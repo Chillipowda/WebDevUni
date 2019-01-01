@@ -33,13 +33,11 @@
   G = <span id="rgb2">204</span>
   B = <span id="rgb3">0</span>
   <script>
+  //using jscolor lib to integrate colour picker for user custom - will store the variable chosen by user as form of local storage
   function update(picker) {
     document.getElementById('rgb1').innerHTML = Math.round(picker.rgb[0]);
     document.getElementById('rgb2').innerHTML = Math.round(picker.rgb[1]);
     document.getElementById('rgb3').innerHTML = Math.round(picker.rgb[2]);
-          console.log(Math.round(picker.rgb[0]));
-          console.log(Math.round(picker.rgb[1]));
-          console.log(Math.round(picker.rgb[2]));
   }
   </script>
   <a href="./assets/Macky Gee - Tour.mp3" download>Sample Song</a>
