@@ -119,6 +119,6 @@ body, ul{
 
 audio {
   position: fixed;
-  width: calc(50%);
+  width: calc(40%);
   right:10px;
 }

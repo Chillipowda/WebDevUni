@@ -3,6 +3,12 @@ window.onload = function() {
 
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
+  function update(picker){
+    console.log(picker.rgb[0]);
+    console.log(picker.rgb[1]);
+    console.log(picker.rgb[2]);
+};
+
 
   file.onchange = function() {
     var files = this.files;
@@ -34,7 +40,7 @@ window.onload = function() {
     var barWidth = (WIDTH / bufferLength) * 2.5;
     var barHeight;
     var x = 0;
-    function renderFrame() {
+    function renderFrame(r, g, b) {
       requestAnimationFrame(renderFrame);
 
       x = 0;
@@ -47,9 +53,9 @@ window.onload = function() {
       for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
 
-        //var b = barHeight + (25 * (i/bufferLength));
-        //var r = 250 * (i/bufferLength);
-        //var g = 100;
+        var r = document.getElementById('rgb1').innerHTML;
+        var g = document.getElementById('rgb2').innerHTML;
+        var b = document.getElementById('rgb3').innerHTML;
 
         ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
