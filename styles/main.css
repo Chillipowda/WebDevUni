@@ -135,7 +135,34 @@ audio {
   text-decoration: none;
   color: black;
 }
+.promobanner {
+  padding:2%;
+  background-color: #101010;
+  width:100%;
+  text-align: center;
+}
 .fab:visited{
   text-decoration: none;
   color: black;
+}
+.promo-image {
+    max-width:250px;
+    max-height:250px;
+    float:left;
+}
+.banner-text{
+  width:auto !important;
+}
+.flex-container{
+  width:40%;
+  margin: 0 auto;
+}
+.flex-content h1, .flex-content h2 {
+  margin:10px auto;
+}
+.promobanner h2{
+  color:white;
+}
+.promobanner .fab{
+  color:white;
 }
