@@ -122,3 +122,20 @@ audio {
   width: calc(40%);
   right:10px;
 }
+.socialmedia {
+  width:100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+}
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.fab:visited{
+  text-decoration: none;
+  color: black;
+}
