@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Header - inplements jquery in case of use, links font awesome and webfont Sawarabi.-->
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -9,6 +10,7 @@
     <title>ICE NINE KILLS - HOME</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav id="topnav">
       <ul id="logo">
         <li><a href="index.html"><img src="./assets/logo.png" alt="anchor tag for home page with bands logo."></a></li>
@@ -31,8 +33,11 @@
       </ul>
     </nav>
     <div id="content">
+      <!-- input for audio file that user selects for audio visualiser -->
   <input type="file" id="thefile" accept="audio/*" />
+      <!-- Input for user to select colour of the audio visualiser -->
   <input class="jscolor {onFineChange:'update(this)'}" value="ffcc00">
+  <!-- Output of RGB Values for nerdy people who like to know that kind of thing, also used in the javascript to get the users colour -->
   R = <span id="rgb1">255</span>
   G = <span id="rgb2">204</span>
   B = <span id="rgb3">0</span>
@@ -44,8 +49,11 @@
     document.getElementById('rgb3').innerHTML = Math.round(picker.rgb[2]);
   }
   </script>
+  <!-- Downloadable file to use as a sample song if user doesn't have one -->
   <a href="./assets/Macky Gee - Tour.mp3" download>Sample Song</a>
+  <!-- Audio controls for somebody using the visualiser -->
   <audio src="" id="audio" controls crossorigin="anonymous"></audio>
+  <!-- canvas to draw to for the javascript visualiser -->
   <canvas id="canvas"></canvas>
 </div>
   </body>
