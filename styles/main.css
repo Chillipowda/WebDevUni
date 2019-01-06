@@ -22,6 +22,7 @@ html, body {
   width:50%;
   padding: 0 3%;
   box-sizing: border-box;
+  margin:0;
 }
 body{
   background-color: #cacaca
