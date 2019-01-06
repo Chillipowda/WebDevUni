@@ -1,3 +1,10 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    position:relative;
+    overflow: auto;
+}
 .content-wrapper{
   background-color: #cacaca;
   top:60px;
@@ -47,7 +54,6 @@ body, ul{
 #logo, #logo li{
   list-style-type: none;
   box-sizing: content-box;
-  width:30%;
   display:inline-block;
 }
 #logo li a img {
@@ -88,6 +94,12 @@ body, ul{
   color: #F70716;
   text-decoration: none;
 }
+#navitems2{
+  float:right;
+}
+#navitems2 li a {
+  text-decoration: none;
+}
 .dropdown {
   display:none;
   position: absolute;
@@ -123,11 +135,15 @@ audio {
   width: calc(40%);
   right:10px;
 }
-.socialmedia {
-  width:100%;
-  position: absolute;
-  bottom:0;
+#navsocials {
   text-align: center;
+  display: inline-block;
+  top:0;
+  list-style-type: none;
+  float:right;
+}
+#navsocials li a {
+  text-decoration: none;
 }
 .fab {
   padding: 20px;
