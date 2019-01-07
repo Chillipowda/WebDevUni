@@ -193,3 +193,33 @@ iframe{
   width:100%;
   text-align: center;
 }
+#Tours{
+width:80%;
+margin:0 auto;
+border-collapse: collapse;
+}
+#Tours th{
+  border:2px solid black;
+  width:50%;
+}
+h1{
+  color:#F70716;
+  text-align: center;
+}
+button{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  float:right;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  margin-right:10px;
+}
+#Tours p{
+  display:inline-block;
+}
