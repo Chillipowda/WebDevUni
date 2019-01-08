@@ -24,6 +24,11 @@ html, body {
   box-sizing: border-box;
   margin:0;
 }
+@media only screen and (max-width: 768px) {
+  .flex-content p{
+    width:75%;
+  }
+}
 body{
   background-color: #cacaca
 }
@@ -34,7 +39,7 @@ body{
 }
 .flex-content{
   width:35%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   text-align: center;
   flex-flow: row wrap;
@@ -224,7 +229,7 @@ h1{
   display:inline-block;
 }
 @media only screen and (max-width: 768px) {
-  .navitems2{
+  #navitems2, #navitems2 a{
     display:none;
   }
 }
