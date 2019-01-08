@@ -1,3 +1,9 @@
+/*Changing some of the base styling so that it fits with the website better*/
+body, ul{
+  padding:0;
+  margin:0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
 html, body {
     margin:0;
     padding:0;
@@ -5,6 +11,10 @@ html, body {
     position:relative;
     overflow: auto;
 }
+body{
+  background-color: #cacaca
+}
+/*Flex-box styling*/
 .content-wrapper{
   background-color: #cacaca;
   top:60px;
@@ -24,12 +34,6 @@ html, body {
   box-sizing: border-box;
   margin:0;
 }
-@media only screen and (min-width:320px) and (max-width: 768px){
-
-}
-body{
-  background-color: #cacaca
-}
 .flex-image{
   max-width:200px;
   max-height:200px;
@@ -43,17 +47,13 @@ body{
   flex-flow: row wrap;
   margin-bottom: 1%;
 }
+/*Navbar stylings*/
 #topnav{
   height:60px;
   width: 100%;
   background-color: rgb(232,232,232);
   top:0;
   display:inline-block;
-}
-body, ul{
-  padding:0;
-  margin:0;
-  font-family: 'Sawarabi Mincho', sans-serif;
 }
 #logo, #logo li{
   list-style-type: none;
@@ -125,7 +125,7 @@ body, ul{
   left: 10px;
   z-index: 100;
 }
-
+/*canvas styling to avoid any permanent drawing outside of the canvas*/
 #canvas {
   position: fixed;
   left: 0;
@@ -133,12 +133,13 @@ body, ul{
   width: 100%;
   height: 70%;
 }
-
+/*Audio bar styling on popular page*/
 audio {
   position: fixed;
   width: calc(40%);
   right:10px;
 }
+/*Styling of the font awesome icons for social media in the navbar*/
 #navsocials {
   text-align: center;
   display: inline-block;
@@ -149,6 +150,7 @@ audio {
 #navsocials li a {
   text-decoration: none;
 }
+/*Font Awesome styling*/
 .fab {
   padding: 20px;
   font-size: 30px;
@@ -156,6 +158,7 @@ audio {
   text-decoration: none;
   color: black;
 }
+/*Promotional banner styling on index page*/
 .promobanner {
   padding:2%;
   background-color: #101010;
@@ -184,6 +187,7 @@ audio {
 .promobanner h2{
   color:white;
 }
+
 .promobanner .fab{
   color:white;
 }
@@ -196,6 +200,7 @@ iframe{
   width:100%;
   text-align: center;
 }
+/*Table styling  on tours page */
 #Tours{
 width:80%;
 margin:0 auto;
@@ -209,6 +214,7 @@ h1{
   color:#F70716;
   text-align: center;
 }
+/*button styling on tours page */
 .info{
   background-color: #000000;
   border: none;
@@ -226,15 +232,26 @@ h1{
 #Tours p{
   display:inline-block;
 }
+/*Hiding some mobile only items*/
 .mobileerror{
   display:none;
 }
 #menuToggle{
   display:none;
 }
+#mobileLogo{
+  display:none;
+}
 @media only screen and (min-width:320px) and (max-width: 768px) {
+  /*Change/hide some elemements from desktop view to fit mobile viewing*/
   #topnav, #logo, #navitems, #songdrop, #navitems2, #navitems2 a, #navitems a{
     display:none;
+  }
+  #mobileLogo{
+    width:40%;
+    height:auto;
+    margin: 0 auto;
+    display:block;
   }
   .flex-content{
     width:75%;
@@ -280,12 +297,13 @@ h1{
   #songdownload{
     display:none;
   }
+  /*Customisation of the iframe when in mobile view to make it fit the screen */
   iframe{
     padding-top:10vh;
     margin: auto 0;
     width:100%;
   }
-/*Creation of a hamburger menu when the view width gets too small*/
+/*Styling of the hamburger that appears when screen width meets media query*/
   #menuToggle
   {
     display: block;
