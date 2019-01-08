@@ -350,7 +350,7 @@ h1{
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: #ededed;
+    background: #e8e8e8;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -365,5 +365,9 @@ h1{
   #menuToggle input:checked ~ ul
   {
     transform: none;
+  }
+  #menuToggle a{
+    text-decoration: none;
+    color:#F70716;
   }
 }
