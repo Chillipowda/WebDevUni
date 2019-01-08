@@ -216,7 +216,7 @@ h1{
 }
 /*button styling on tours page */
 .info{
-  background-color: #000000;
+  background: linear-gradient(to right, #ff0000 0%, #b55a5a 84%);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -246,6 +246,9 @@ h1{
   /*Change/hide some elemements from desktop view to fit mobile viewing*/
   #topnav, #logo, #navitems, #songdrop, #navitems2, #navitems2 a, #navitems a{
     display:none;
+  }
+  #mobileLink{
+    display:block;
   }
   #mobileLogo{
     width:40%;
