@@ -391,4 +391,8 @@ h1{
     text-decoration: none;
     color:#F70716;
   }
+  .info {
+    padding: 5px 30px;
+    margin-bottom:3vh;
+  }
 }
