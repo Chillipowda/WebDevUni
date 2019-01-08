@@ -37,23 +37,20 @@
       <!-- input for audio file that user selects for audio visualiser -->
   <input type="file" id="thefile" accept="audio/*" />
       <!-- Input for user to select colour of the audio visualiser -->
-      <p>Link INPUT elements:
       <button class="jscolor
           {valueElement:'valueInput', styleElement:'styleInput'}" id="colourpicker">
           Click here to pick a color
       </button>
       <button id="retriever" type="button">Use saved colour</button>
       <button id="storer" type="button" onclick="store()">Save this colour</button>
-      <p>
-      Value: <input id="valueInput" value="ff6699"><br>
-  <!-- Output of RGB Values for nerdy people who like to know that kind of thing, also used in the javascript to get the users colour -->
-
-  <!-- Downloadable file to use as a sample song if user doesn't have one -->
-  <a href="./assets/Macky Gee - Tour.mp3" download>Sample Song</a>
+      <input id="valueInput" value="ff6699"><br>
+  <!-- Downloadable file to use as a sample song if user doesn't have one for the visualiser -->
+  <a id="songdownload" href="./assets/Macky Gee - Tour.mp3" download>Sample Song</a>
   <!-- Audio controls for somebody using the visualiser -->
   <audio src="" id="audio" controls crossorigin="anonymous"></audio>
   <!-- canvas to draw to for the javascript visualiser -->
   <canvas id="canvas"></canvas>
+  <h1 class="mobileerror">Unfortunately, your browser does not support this in mobile view. Why not try requesting the desktop site instead?</h1>
 </div>
   </body>
 </html>
