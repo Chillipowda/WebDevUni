@@ -25,9 +25,7 @@ html, body {
   margin:0;
 }
 @media only screen and (min-width:320px) and (max-width: 768px){
-  .flex-content p {
-    width:75%;
-  }
+
 }
 body{
   background-color: #cacaca
@@ -231,5 +229,25 @@ h1{
 @media only screen and (min-width:320px) and (max-width: 768px) {
   #navitems2, #navitems2 a{
     display:none;
+  }
+  .flex-content{
+    width:75%;
+    margin: 0 auto;
+  }
+  .flex-content p {
+    width:75%;
+    margin: 0 auto;
+  }
+  .flex-image{
+    margin:0 auto;
+  }
+  .promobanner{
+    width:100%;
+  }
+  .flex-container {
+    width:100%;
+  }
+  .promo-image{
+    float:none;
   }
 }
