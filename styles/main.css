@@ -24,8 +24,8 @@ html, body {
   box-sizing: border-box;
   margin:0;
 }
-@media only screen and (max-width: 768px) {
-  .flex-content p{
+@media only screen and (min-width:320px) and (max-width: 768px){
+  .flex-content p {
     width:75%;
   }
 }
@@ -228,7 +228,7 @@ h1{
 #Tours p{
   display:inline-block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:320px) and (max-width: 768px) {
   #navitems2, #navitems2 a{
     display:none;
   }
