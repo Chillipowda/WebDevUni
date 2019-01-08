@@ -9,6 +9,7 @@ window.onload = function() {
     console.log(picker.rgb[0]);
     console.log(picker.rgb[1]);
     console.log(picker.rgb[2]);
+
 };
 
 //when a file is picked by the user, execute this
@@ -58,11 +59,9 @@ window.onload = function() {
       for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
         //rgb is grabbed from the webpage (nerd stat is used in this scenario)
-        var r = document.getElementById('rgb1').innerHTML;
-        var g = document.getElementById('rgb2').innerHTML;
-        var b = document.getElementById('rgb3').innerHTML;
+        var uhex = document.getElementById('valueInput').value;
         //fill the bars drawn to the canvas with user specified colour
-        ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+        ctx.fillStyle = "#"+uhex;
         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
 
         x += barWidth + 1;

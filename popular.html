@@ -36,19 +36,17 @@
       <!-- input for audio file that user selects for audio visualiser -->
   <input type="file" id="thefile" accept="audio/*" />
       <!-- Input for user to select colour of the audio visualiser -->
-  <input class="jscolor {onFineChange:'update(this)'}" value="ffcc00">
+      <p>Link INPUT elements:
+      <button class="jscolor
+          {valueElement:'valueInput', styleElement:'styleInput'}" id="colourpicker">
+          Click here to pick a color
+      </button>
+      <button id="retriever" type="button">Use saved colour</button>
+      <button id="storer" type="button" onclick="store()">Save this colour</button>
+      <p>
+      Value: <input id="valueInput" value="ff6699"><br>
   <!-- Output of RGB Values for nerdy people who like to know that kind of thing, also used in the javascript to get the users colour -->
-  R = <span id="rgb1">255</span>
-  G = <span id="rgb2">204</span>
-  B = <span id="rgb3">0</span>
-  <script>
-  //using jscolor lib to integrate colour picker for user custom - will store the variable chosen by user as form of local storage
-  function update(picker) {
-    document.getElementById('rgb1').innerHTML = Math.round(picker.rgb[0]);
-    document.getElementById('rgb2').innerHTML = Math.round(picker.rgb[1]);
-    document.getElementById('rgb3').innerHTML = Math.round(picker.rgb[2]);
-  }
-  </script>
+
   <!-- Downloadable file to use as a sample song if user doesn't have one -->
   <a href="./assets/Macky Gee - Tour.mp3" download>Sample Song</a>
   <!-- Audio controls for somebody using the visualiser -->
@@ -60,3 +58,25 @@
 </html>
 <script src="./scripts/main.js" charset="utf-8"></script>
 <script src="./scripts/jscolor.js" charset="utf-8"></script>
+<script>
+//using jscolor lib to integrate colour picker for user custom - will store the variable chosen by user as form of local storage
+function store(){
+  if (typeof(Storage)==="undefined") {
+    console.log("No web-storage support, sorry!");
+  }
+  else {
+    console.log("accessed");
+    var hexcode = document.getElementById('valueInput').value;
+    localStorage.setItem("uhex",hexcode);
+  }
+}
+retriever.onclick = function(){
+  if (typeof(Storage)==="undefined") {
+    console.log("No web-storage support, sorry!");
+  }
+  else {
+    console.log("accessed");
+    document.getElementById('valueInput').value = localStorage.getItem("uhex");
+  }
+}
+</script>
